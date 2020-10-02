@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  
+  <span> App</span>
+  <span class="example-spacer"></span>
+  <span>MSWD</span>
+</mat-toolbar>
+<mat-list >
+  <mat-list-item *ngFor="let wonder of App">
+    {{wonder.name}}
+    <span class="example-spacer"></span>
+    <button mat-flat-button color="accent" routerLink={{wonder.link}}>Know more</button>
+    </mat-list-item>
+  
+</mat-list>
+<router-outlet></router-outlet>
